@@ -1,15 +1,20 @@
-import { Filter } from "@/components/Filter";
-import { Filters } from "@/components/Filters";
-import { theme } from "@/theme";
-import { FILTERS } from "@/utils/Filters";
 import { useState } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+
+import { theme } from "@/theme";
+
+import { Posts } from "@/components/Posts";
+import { Filters } from "@/components/Filters";
+
+import { FILTERS } from "@/utils/Filters";
+import { POSTS } from "@/utils/POSTS";
 
 export default function Home() {
   const [filter, setFilter] = useState(FILTERS[0]);
   return (
     <View style={styles.container}>
-      <Filters filters={FILTERS} filter={filter} onChange={setFilter}/>
+      <Filters filters={FILTERS} filter={filter} onChange={setFilter} />
+      <Posts posts={POSTS} />
     </View>
   );
 }

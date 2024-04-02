@@ -2,11 +2,15 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   list: {
-    paddingBottom: 4,
+    paddingTop: 16,
   },
 
-  content: {
-    gap: 24,
-    paddingHorizontal: 8,
+  container: {
+    flex: 1,
+    flexDirection: "row",
+  },
+
+  column: {
+    flex: 1,
   },
 });
