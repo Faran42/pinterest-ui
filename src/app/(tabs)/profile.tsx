@@ -4,7 +4,8 @@ import { StyleSheet, Text, View } from "react-native";
 export default function Profile() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Profile</Text>
+      <Text style={styles.text}>Thanks for watching</Text>
+      <Text style={styles.text}>{'\n'}d=(^_^)=b</Text>
     </View>
   );
 }
